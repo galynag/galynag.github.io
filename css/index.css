@@ -1,0 +1,43 @@
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+.logo {
+    width: 16%;
+    display: inline-block;
+    float: left;
+}
+.logo::after, .logo::before {
+    content: '';
+    clear: both;
+    display: block;
+}
+#box-logo {
+    position: relative;
+    margin: 30px auto;
+    height: 20em;
+}
+#logo {
+    width: 40%;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#logo2 {
+    width: 48.5%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.word--under {
+    font-size: 3vw;
+}

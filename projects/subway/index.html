@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Londrina+Outline|Londrina+Solid" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="style.css">
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+    <title>Subway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<header>
+    <nav class="nav-extended #212121 grey darken-4"></nav>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="input-field col l6 s12">
+                <h2>Станція відправлення</h2>
+                <select id="start">
+                    <option value="" disabled selected>Виберіть станцію відправлення</option>
+                    <option value="100">Академмістечко</option>
+                    <option value="101">Житомирська</option>
+                    <option value="102">Святошин</option>
+                    <option value="103">Нивки</option>
+                    <option value="104">Берестейська</option>
+                    <option value="105">Шулявська</option>
+                    <option value="106">Політехнічний Інститут</option>
+                    <option value="107">Вокзальна</option>
+                    <option value="108">Університет</option>
+                    <option value="109">Театральна</option>
+                    <option value="110">Хрещатик</option>
+                    <option value="111">Арсенальна</option>
+                    <option value="112">Дніпро</option>
+                    <option value="113">Гідропарк</option>
+                    <option value="114">Лівобережна</option>
+                    <option value="115">Дарниця</option>
+                    <option value="116">Чернігівська</option>
+                    <option value="117">Лісова</option>
+                    <option value="200">Героїв Дніпра</option>
+                    <option value="201">Мінська</option>
+                    <option value="202">Оболонь</option>
+                    <option value="203">Петрівка</option>
+                    <option value="204">Тараса Шевченка</option>
+                    <option value="205">Контрактова Площа</option>
+                    <option value="206">Поштова Площа</option>
+                    <option value="207">Майдан Незалежності</option>
+                    <option value="208">Площа Льва Толстого</option>
+                    <option value="209">Олімпійська</option>
+                    <option value="210">Палац Україна</option>
+                    <option value="211">Либідська</option>
+                    <option value="212">Деміївська</option>
+                    <option value="213">Голосіївська</option>
+                    <option value="214">Васильківська</option>
+                    <option value="215">Виставковий Центр</option>
+                    <option value="216">Іподром</option>
+                    <option value="217">Теремки</option>
+                    <option value="300">Сирець</option>
+                    <option value="301">Дорогожичі</option>
+                    <option value="302">Лук'янівська</option>
+                    <option value="303">Львівська Брама</option>
+                    <option value="304">Золоті Ворота</option>
+                    <option value="305">Палац Спорту</option>
+                    <option value="306">Кловська</option>
+                    <option value="307">Печерська</option>
+                    <option value="308">Дружби Народів</option>
+                    <option value="309">Видубичі</option>
+                    <option value="310">Теличка</option>
+                    <option value="311">Славутич</option>
+                    <option value="312">Осокорки</option>
+                    <option value="313">Позняки</option>
+                    <option value="314">Харківська</option>
+                    <option value="315">Вирлиця</option>
+                    <option value="316">Бориспільська</option>
+                    <option value="317">Червоний хутір</option>
+                </select>
+            </div>
+
+            <div class="input-field col l6 s12">
+                <h2>Станція прибуття</h2>
+                <select id="finish">
+                    <option value="" disabled selected>Виберіть станцію прибуття</option>
+                    <option value="100">Академмістечко</option>
+                    <option value="101">Житомирська</option>
+                    <option value="102">Святошин</option>
+                    <option value="103">Нивки</option>
+                    <option value="104">Берестейська</option>
+                    <option value="105">Шулявська</option>
+                    <option value="106">Політехнічний Інститут</option>
+                    <option value="107">Вокзальна</option>
+                    <option value="108">Університет</option>
+                    <option value="109">Театральна</option>
+                    <option value="110">Хрещатик</option>
+                    <option value="111">Арсенальна</option>
+                    <option value="112">Дніпро</option>
+                    <option value="113">Гідропарк</option>
+                    <option value="114">Лівобережна</option>
+                    <option value="115">Дарниця</option>
+                    <option value="116">Чернігівська</option>
+                    <option value="117">Лісова</option>
+                    <option value="200">Героїв Дніпра</option>
+                    <option value="201">Мінська</option>
+                    <option value="202">Оболонь</option>
+                    <option value="203">Петрівка</option>
+                    <option value="204">Тараса Шевченка</option>
+                    <option value="205">Контрактова Площа</option>
+                    <option value="206">Поштова Площа</option>
+                    <option value="207">Майдан Незалежності</option>
+                    <option value="208">Площа Льва Толстого</option>
+                    <option value="209">Олімпійська</option>
+                    <option value="210">Палац Україна</option>
+                    <option value="211">Либідська</option>
+                    <option value="212">Деміївська</option>
+                    <option value="213">Голосіївська</option>
+                    <option value="214">Васильківська</option>
+                    <option value="215">Виставковий Центр</option>
+                    <option value="216">Іподром</option>
+                    <option value="217">Теремки</option>
+                    <option value="300">Сирець</option>
+                    <option value="301">Дорогожичі</option>
+                    <option value="302">Лук'янівська</option>
+                    <option value="303">Львівська Брама</option>
+                    <option value="304">Золоті Ворота</option>
+                    <option value="305">Палац Спорту</option>
+                    <option value="306">Кловська</option>
+                    <option value="307">Печерська</option>
+                    <option value="308">Дружби Народів</option>
+                    <option value="309">Видубичі</option>
+                    <option value="310">Теличка</option>
+                    <option value="311">Славутич</option>
+                    <option value="312">Осокорки</option>
+                    <option value="313">Позняки</option>
+                    <option value="314">Харківська</option>
+                    <option value="315">Вирлиця</option>
+                    <option value="316">Бориспільська</option>
+                    <option value="317">Червоний хутір</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <button  class="waves-effect waves-light btn" id="rezult">Розрахувати маршрут</button>
+                <div id="out"></div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+<footer class="page-footer #212121 grey darken-4"></footer>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="../index.js"></script>
+<script src="../../js/materialize.min.js"></script>
+<script src="js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+header {
+    height: 100px;
+}
+
+h1 {
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+h1, h2, h3, p, button, span {
+    text-transform: uppercase;
+}
+
+.slider-item h2 {
+    color: #85888c;
+    margin: 38px 20px 0 20px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid lightgrey;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.slider-item h3 {
+    color: #009be1;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.position-window {
+    margin: 20px auto;
+    float: none;
+    width: 975px;
+    position: relative;
+}
+
+img.left, img.right {
+    position: absolute;
+    top: 111px;
+    z-index: 99;
+}
+
+img.left {
+    left: -25.5px;
+}
+
+
+img.right  {
+    right: -24.5px;
+}
+
+.slider1 {
+    margin: 20px auto;
+    padding: 33px 0 0 0;
+    width: 981px;
+    height: 488px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.slider-group {
+    margin: auto;
+    height: 455px;
+    width: 1300px;
+    border: 1px solid lightgrey;
+}
+
+#slider-group {
+    transition: all ease 1s;
+}
+
+.slider-item {
+    float:left;
+    width: 245px;
+    height: 455px;
+    border-right: 1px solid lightgrey;
+    position: relative;
+}
+
+.old-prise {
+    text-decoration: line-through;
+    font-size: 10px
+}
+
+.prise {
+    font-size: 20px;
+}
+
+span.hit, span.new {
+    position: absolute;
+    right: 13px;
+    top: -33px;
+    display: block;
+    width: 68px;
+    height: 68px;
+    border-radius: 62px;
+    padding: 28px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.slider-item p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    height: 26px;
+}
+
+span.new {
+    background-color: #86b022;
+    color: #fff;
+}
+
+span.hit {
+    padding-top: 19px;
+    background-color: #009de1;
+    color: #fff;
+}
+
+.slider-item button {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 3ex auto;
+}
+
+button.wait {
+    background-color: #cc3399;
+    color: #fff;
+}
+
+button.bag {
+    background-color: #f0e524;
+}
+
+.item-description img {
+    display: block;
+    margin: 20px auto 35px auto;
+    width: 140px;
+    height: 140px;
+}

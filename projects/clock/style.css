@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+main .container {
+    margin: 3ex auto;
+}
+
+#clock {
+    width: 800px;
+    height: 852px;
+    position: relative;
+    background: url('img/img_52.png');
+    background-size: cover;
+}
+
+#clock img {
+    position: absolute;
+    top: 78px;
+    left: 252px;
+}
+

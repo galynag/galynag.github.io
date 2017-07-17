@@ -39,5 +39,9 @@ main {
     transform: translate(-50%,-50%);
 }
 .word--under {
-    font-size: 3vw;
+    font-size: 3rem;
+}
+#tic-tac-toe h2 {
+    width: auto;
+    font-size: 2.6rem;
 }

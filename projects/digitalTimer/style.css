@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner {
+    display: block;
+    width: 600px;
+    margin: 30px auto;
+    position: relative;
+}
+canvas {
+    height: 100px;
+    width: 200px;
+}
+#clock {
+    position: absolute;
+    background-color: transparent;
+    z-index: 98;
+}
+/* минуты */
+#min {
+    position: absolute;
+    background-color: transparent;
+    left: 0;
+    z-index: 99;
+    opacity:0.7;
+}
+/* секунды */
+#sec {
+    position: absolute;
+    background-color: transparent;
+    left: 50px;
+    z-index: 100;
+    opacity:0.7;
+}

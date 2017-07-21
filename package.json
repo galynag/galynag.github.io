@@ -1,0 +1,28 @@
+{
+  "name": "galynag.github.io",
+  "version": "1.0.0",
+  "description": "page about me",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-env": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galynag/galynag.github.io.git"
+  },
+  "keywords": [
+    "page",
+    "git"
+  ],
+  "presets": ["env"],
+  "author": "galina gavrina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galynag/galynag.github.io/issues"
+  },
+  "homepage": "https://github.com/galynag/galynag.github.io#readme"
+}

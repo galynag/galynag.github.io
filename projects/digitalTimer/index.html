@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,12 +16,15 @@
 
 <main>
     <div class="container">
-        <div  id="clock">
-            <img id="min" src="img/min.png" alt="">
-            <img id="sec" src="img/sec.png" alt="">
+        <div class="conteiner">
+            <canvas id="clock" width="200px" height="100px"></canvas>
+            <canvas id="min" width="200px" height="100px"></canvas>
+            <canvas id="sec" width="200px" height="100px"></canvas>
         </div>
-        <a href="https://github.com/galynag/clock_min_sec">see code on GitHub</a>
     </div>
+    <br>
+    <a href="https://codepen.io/ggalina/pen/GEqwmV">see code on CodePen</a>
+    <br>
 </main>
 
 
@@ -31,7 +34,7 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="../index.js"></script>
 <script src="../../js/materialize.min.js"></script>
-<script src="js.js"></script>
-
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel"  src="js.js"></script>
 </body>
 </html>

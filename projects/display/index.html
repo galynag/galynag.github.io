@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Londrina+Outline|Londrina+Solid" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="style.css">
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+    <title>display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<header>
+    <nav class="nav-extended #212121 grey darken-4"></nav>
+</header>
+
+<main>
+    <div class="container">
+        <h1>Два варианта отображения рисунка из списка миниатюр: автоматически, при клике на картинку.</h1>
+        <ol id="v-display">
+            <li>
+                Автоматическое изменение главного рисунка. Выделение активным классом миниатюры, которая отображается в главном блоке.
+                <p><i>*заполнение списка миниатюр выполнено из массива при помощи Java Script</i></p>
+                <br>
+                <div id="display1"></div>
+                <div id="gallery1"></div>
+            </li>
+            <li>
+                Изменение главного рисунка при клике на миниатюру в списке. Выделение активным классом миниатюры, которая отображается в главном блоке.
+                <p><i>*заполнение списка миниатюр выполнено в HTML</i></p>
+                <br>
+                <div id="display"></div>
+                <div class="gallery">
+                    <img class="mini" src="img/mini1.png" alt="">
+                    <img class="mini" src="img/mini2.png" alt="">
+                    <img class="mini" src="img/mini3.png" alt="">
+                    <img class="mini" src="img/mini4.png" alt="">
+                    <img class="mini" src="img/mini5.png" alt="">
+                    <img class="mini" src="img/mini6.png" alt="">
+                    <hr>
+                </div>
+            </li>
+        </ol>
+        <a href="https://github.com/galynag/040517_display" target="_blank">Look code on GitHub</a>
+    </div>
+</main>
+
+
+<footer class="page-footer #212121 grey darken-4"></footer>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="../index.js"></script>
+<script src="../../js/materialize.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel"  src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    display: block;
+}
+.picture {
+    width: 560px;
+    height: 447px;
+    position: relative;
+    background: #80cdc6;
+    overflow: hidden;
+}
+
+#water {
+    position: absolute;
+    width: 600px;
+    z-index:99;
+    bottom: 0;
+    left: -14px;
+    animation-name: water;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes water {
+    0% {
+        bottom: 0px;
+        left: -14px;
+    }
+    50% {
+        bottom: 0px;
+        left: -1px;
+    }
+    100% {
+        bottom: 0px;
+        left: -14px;
+    }
+}
+@keyframes water2 {
+    0% {
+        bottom: 5px;
+        left: -17px;
+    }
+    50% {
+        bottom: 5px;
+        left: -39px;
+    }
+    100% {
+        bottom: 5px;
+        left: -12px;
+    }
+}
+#water2 {
+    position: absolute;
+    width: 600px;
+    z-index:98;
+    bottom: 5px;
+    animation-name: water2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#wooden-ship {
+    position: absolute;
+    width: 116px;
+    bottom: 39px;
+    left: -119px;
+    z-index: 98;
+    animation-name: ship;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+@keyframes ship {
+    0% {
+        bottom: 39px;
+        left: -119px;
+    }
+    50% {
+        bottom: 39px;
+        left: 561px;
+    }
+    100% {
+        bottom: 39px;
+        left: -119px;
+    }
+}
+#world {
+    position: absolute;
+    width: 560px;
+    top: 117px;
+    z-index: 4;
+}
+#clouds {
+    position: absolute;
+    width: 350px;
+    top: 23px;
+    left: 209px;
+    z-index: 2;
+    opacity: 0.7;
+    animation-name: clouds;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+@keyframes clouds {
+    0% {
+        top: 42px;
+        left: 560px;
+        opacity: 0.1;
+    }
+    20% {
+        top: 36px;
+        left: 562px;
+        opacity: 0.5;
+    }
+    50% {
+        top: 36px;
+        left: 139px;
+        opacity: 0.7;
+    }
+    100% {
+        top: 40px;
+        right: 535px;
+        opacity: 1;
+    }
+}
+#sun {
+    position: absolute;
+    top: 19px;
+    right: 97px;
+    z-index: 0;
+    width: 50px;
+    animation-name: sun;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+@keyframes sun {
+    0% {
+        top: 268px;
+        right: 97px;
+    }
+    100% {
+        top: -57px;
+        right: 97px;
+    }
+}
+#comet {
+    position: absolute;
+    z-index: 3;
+    width: 11px;
+    left: -1px;
+    top: 65px;
+    animation-name: comet;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes comet {
+    0% {
+        width: 11px;
+        left: -1px;
+        top: 65px;
+    }
+    100% {
+        width: 57px;
+        left: 175px;
+        top: 258px;
+    }
+    /*100% {*/
+    /*width: 11px;*/
+    /*left: -1px;*/
+    /*top: 65px;}*/
+}

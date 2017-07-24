@@ -1,0 +1,57 @@
+* {
+
+    box-sizing: border-box;
+}
+
+.image {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+.image2 {
+    position: relative;
+    /*margin: 20px 50px;*/
+    width: 560px;
+    height: 400px;
+}
+.image2 img {
+    display: block;
+    width: 560px;
+    height: 400px;
+}
+.image2::before {
+    content: url('img/shadow-left.png');
+    position: absolute;
+    top: 344px;
+    right: 280px;
+    z-index: -2;
+}
+.image2::after {
+    content: url('img/shadow-right.png');
+    position: absolute;
+    top: 344px;
+    left: 280px;
+    z-index: -2;
+}
+.image img {
+    display: block;
+    width: 320px;
+    height: 320px;
+    border: 7px solid #fff;
+    margin: 50px auto;
+    box-shadow: -1px 2px 18px 1px rgba(0,0,0,0.64);
+}
+.image::before {
+    content: url('img/left.png');
+    position: absolute;
+    top: -47px;
+    left: 31px;
+    z-index: -2;
+}
+.image::after {
+    content: url('img/right.png');
+    position: absolute;
+    top: -51px;
+    right: 35px;
+    z-index: -2;
+}
